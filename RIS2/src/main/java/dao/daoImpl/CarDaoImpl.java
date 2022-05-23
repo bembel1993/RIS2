@@ -20,6 +20,7 @@ public class CarDaoImpl implements CarDao {
     public boolean addCar(Car car) {
         boolean isAdded = false;
         try {
+            //сессия создается для физ соединения с БД
             Session session = SessionFactoryImpl.getSessionFactory().openSession();
             Transaction tx = session.beginTransaction();
             session.save(car);

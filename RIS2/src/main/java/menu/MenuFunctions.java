@@ -499,6 +499,7 @@ public class MenuFunctions {
         return cars;
     }
 
+
     private void theHeaderForCar() {
         System.out.format("%15s%20s%10s%10s%10s%15s%10s%20s", "ID |", "Название |", "Год |", "Пробег |", "Топливо |",
                 "Расход топлива |", "Цена |", " Компания|");
